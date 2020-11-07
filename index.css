@@ -1,1 +1,73 @@
 /* Link this file to html */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    /* border: 1px solid goldenrod; */
+    margin: 0;
+    font-family: 'Play', sans-serif;
+}
+
+
+body{
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    height: 5vh;
+    align-items: center; /*different from justify content*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+a:hover{
+    background-color: cadetblue;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+section{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+section article h2{
+    color: rgb(41, 100, 139);
+    margin: 10px 0 10px 0; /*think of a clock when choosing these, start at top*/
+}
+
+section article p{
+    line-height: 1.5em;
+}
+
+article{
+    width: 45%;
+    display: flex;
+    border: darkblue 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    background: lightgrey;
+    flex-direction: column; /*our axis is already set so we need to align our items*/
+    align-items: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+}
